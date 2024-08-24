@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Employee Directory";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 80px 30px;
+            margin-bottom: 0;
+        }
+
+            .jumbotron h1 {
+                font-size: 3.5rem;
+            }
+
+        .lead {
+            font-size: 1.5rem;
+        }
+
+        .card {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1 class="display-3">Employee Directory</h1>
+        <p class="lead">Welcome to our employee directory application.</p>
+        <p>Explore and manage your company's workforce efficiently.</p>
+    </div>
+
+    @* <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">About Us</h2>
+                        <p class="card-text">Learn about our mission and values.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Our Team</h2>
+                        <p class="card-text">Meet the people behind our success.</p>
+                        <a href="#" class="btn btn-primary">View Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> *@
+
+    <div class="container">
+        <div class="text-center">
+            <p class="lead">Start managing your employees today.</p>
+            <a href="@Url.Action("Index", "EmployeeProfiles")" class="btn btn-lg btn-success">Get Started</a>
+        </div>
+    </div>
+
+    <footer class="text-muted text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Employee Directory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
